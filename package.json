@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/niaxi/hello-electron#readme",
   "devDependencies": {
-    "electron": "^0.4.1"
+    "electron-prebuilt": "^0.34.2"
   }
 }

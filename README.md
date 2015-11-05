@@ -7,3 +7,6 @@ Initial setup (install dev dependencies)
 
 > npm install
 
+Run the app
+
+> npm start
