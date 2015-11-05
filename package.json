@@ -4,7 +4,13 @@
   "description": "Checking out electron",
   "main": "./src/main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "clean": "rimraf ./dist/*",
+    "clean:win": "rimraf ./dist/*win32*",
+    "clean:mac": "rimraf ./dist/*darwin*",
+    "package:win": "npm run clean:win && electron-packager . HelloElectron --platform=win32 --arch=x64 --version=0.34.2 --ignore=node_modules --ignore=dist --out=./dist",
+    "package:mac": "npm run clean:mac && electron-packager . HelloElectron --platform=darwin --arch=x64 --version=0.34.2 --ignore=node_modules --ignore=dist --out=./dist",
+    "package": "npm run clean && electron-packager . HelloElectron --platform=win32,darwin --arch=x64 --version=0.34.2 --ignore=node_modules --ignore=dist --out=./dist"
   },
   "repository": {
     "type": "git",
@@ -18,6 +24,8 @@
   },
   "homepage": "https://github.com/niaxi/hello-electron#readme",
   "devDependencies": {
-    "electron-prebuilt": "^0.34.2"
+    "electron-packager": "^5.1.1",
+    "electron-prebuilt": "^0.34.2",
+    "rimraf": "^2.4.3"
   }
 }

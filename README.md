@@ -10,3 +10,10 @@ Initial setup (install dev dependencies)
 Run the app
 
 > npm start
+
+Package for distribution
+
+> npm run package:win
+> npm run package:mac
+
+> npm run package
