@@ -32,5 +32,6 @@ app.on('ready', function() {
     mainWindow = null;
   });
 
-  app.dock.setBadge('2');
+  if (process.platform === 'darwin')
+    app.dock.setBadge('2');
 });
