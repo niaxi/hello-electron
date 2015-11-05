@@ -23,5 +23,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+.log
 node_modules
 dist
