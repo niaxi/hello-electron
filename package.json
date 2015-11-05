@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/niaxi/hello-electron/issues"
   },
-  "homepage": "https://github.com/niaxi/hello-electron#readme"
+  "homepage": "https://github.com/niaxi/hello-electron#readme",
+  "devDependencies": {
+    "electron": "^0.4.1"
+  }
 }
