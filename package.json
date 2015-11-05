@@ -1,0 +1,20 @@
+{
+  "name": "hello-electron",
+  "version": "0.0.1",
+  "description": "Checking out electron",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niaxi/hello-electron.git"
+  },
+  "author": "Ni Axi <niaxi@tuta.io>",
+  "license": "MIT",
+  "copyright": "Copyright (c) 2015, Ni Axi",
+  "bugs": {
+    "url": "https://github.com/niaxi/hello-electron/issues"
+  },
+  "homepage": "https://github.com/niaxi/hello-electron#readme"
+}
